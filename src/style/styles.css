@@ -1,0 +1,46 @@
+.box {
+    background-color: #282c34;
+    min-height: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1% 2%;
+    
+}
+
+.header-text {
+    font-size: 16px;
+  font-weight: 500;
+  color: #61dafb;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+}
+
+.card {
+    width: 50vw;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .results-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1% 1%;
+        
+    }
+
+   
+  }
