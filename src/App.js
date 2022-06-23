@@ -34,7 +34,7 @@ class App extends React.Component {
       return (
       <div className="App">
         < SearchContainer searchMemes={this.searchMemes}/> 
-        < ResultsContainer memesArray={this.state.allMemes.filter(meme => meme.name.toLowerCase().includes(this.state.searchText)).slice(0, 30)}/>
+        < ResultsContainer memesArray={this.state.allMemes.filter(meme => meme.name.toLowerCase().includes(this.state.searchText)).slice(0, 100)}/>
         
       </div>
     );
